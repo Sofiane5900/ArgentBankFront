@@ -1,8 +1,8 @@
 import React from 'react'
 import './Features.css'
-import Chat from '../../designs/img/icon-chat.png'
-import Money from '../../designs/img/icon-money.png'
-import Security from '../../designs/img/icon-security.png'
+import Chat from '../../designs/img/icon-chat.webp'
+import Money from '../../designs/img/icon-money.webp'
+import Security from '../../designs/img/icon-security.webp'
 
 const Features = () => {
   return (

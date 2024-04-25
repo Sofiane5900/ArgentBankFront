@@ -1,6 +1,6 @@
 import React from 'react'
 import './Navbar.css'
-import Logo from '../../designs/img/argentBankLogo.png'
+import Logo from '../../designs/img/argentBankLogo.webp'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleUser } from '@fortawesome/free-solid-svg-icons'
 
