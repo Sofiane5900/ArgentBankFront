@@ -5,9 +5,12 @@
     padding: 5px 20px;
   }
   
-  .main-nav a {
+  .main-nav-item {
     font-weight: bold;
     color: #2c3e50;
+    outline: none;
+    border: none;
+    background: none;
   }
   
   .main-nav a.router-link-exact-active {

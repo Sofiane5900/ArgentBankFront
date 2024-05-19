@@ -1,12 +1,12 @@
 import React from 'react'
-import Navbar from '../components/Navbar/Navbar'
+import NavbarSignOut from '../components/Navbar/NavbarSignOut'
 import Account from '../components/Account/Account';
 import Footer from '../components/Footer/Footer';
 
 const User = () => {
   return (
     <div>
-        <Navbar />
+        <NavbarSignOut />
         <Account />
         <Footer />
     </div>
