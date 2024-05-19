@@ -39,7 +39,6 @@ const Account = () => {
   const handleSaveButtonClick = async () => {
     try {
       await updateUserProfile(newUsername); // Appeler la fonction pour mettre à jour le profil utilisateur
-      localStorage.setItem('username', newUsername);
       window.location.reload();
       setEditMode(false);
     } catch (error) {
