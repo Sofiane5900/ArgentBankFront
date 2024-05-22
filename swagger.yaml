@@ -101,6 +101,84 @@ paths:
           description: Invalid Fields
         '500':
           description: Internal Server Error
+
+  # **** MES ENDPOINTS **** : 
+  /user/balance:
+    get:
+      security:
+        - Bearer: []
+      tags:
+        - User Module
+      summary: Fetch User Balance
+      description: API for fetching the user's current balance
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: Balance retrieved successfully
+          schema:
+            $ref: '#/definitions/ApiResponse'
+        '400':
+          description: Invalid Fields
+        '500':
+          description: Internal Server Error
+
+ #Transfer Money
+  /user/transfer:
+    post:
+      security:
+        - Bearer: []
+      tags:
+        - User Module
+      summary: Transfer Money
+      description: API for transferring money to another account
+      parameters:
+        - in: body
+          name: body
+          description: Transfer details
+          required: true
+          schema:
+            $ref: '#/definitions/ApiResponse'
+      responses:
+        '200':
+          description: Transfer completed successfully
+          schema:
+            $ref: '#/definitions/ApiResponse'
+        '400':
+          description: Invalid transfer details
+        '500':
+          description: Internal Server Error
+
+  #Fetch specific transaction
+  /user/transactions/{transactionId}:
+    get:
+      security:
+        - Bearer: []
+      tags:
+        - User Module
+      summary: Fetch Transaction Details
+      description: API for fetching the details of a specific transaction
+      parameters:
+        - in: path
+          name: transactionId
+          description: Transaction ID
+          required: true
+          type: string
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: Balance retrieved successfully
+          schema:
+            $ref: '#/definitions/ApiResponse'
+        '400':
+          description: Invalid Fields
+        '500':
+          description: Internal Server Error
+
+ 
+
+
 securityDefinitions:
   Bearer:
     type: apiKey
