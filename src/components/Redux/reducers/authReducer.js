@@ -23,8 +23,8 @@ const authReducer = (state = initialState, action) => { // Ici, je crée un redu
     case 'UPDATE_USERNAME': // Si l'action est UPDATE_USERNAME
       console.log("New username:", action.payload); // Je console.log le nouveau nom d'utilisateur
       return { ...state, user: { ...state.user, userName: action.payload } }; // Je retourne une state avec le nouveau nom d'utilisateur
-    case SIGN_OUT:
-      return {
+    case SIGN_OUT: // Si l'action est SIGN_OUT
+      return { 
         ...state,
         token: null,
         error: null

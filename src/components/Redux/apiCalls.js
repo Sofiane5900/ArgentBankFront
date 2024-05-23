@@ -63,7 +63,7 @@ export const loginUser = async (email, password, dispatch) => { // Pass dispatch
   };
   
 
-  // ** CHANGE USERNAME ** //
+// ** CHANGE USERNAME ** //
   // Fonction pour mettre à jour le profil utilisateur avec le nouvel username
 export const updateUserProfile = async (newUsername) => {
   try {
