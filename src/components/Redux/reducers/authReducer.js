@@ -5,10 +5,6 @@ const initialState = {
   token: localStorage.getItem('token') || null,
   error: null,
   user: {
-    email: '',
-    password: '',
-    firstName: '',
-    lastName: '',
     userName: '',
   },
 };

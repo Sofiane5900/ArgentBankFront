@@ -21,7 +21,7 @@ const Navbar = () => {
         <div>
           <a className="main-nav-item" href="./sign-in">
           <FontAwesomeIcon icon={faCircleUser}/>       
-            Sign In
+          &nbsp;Sign In
           </a>
         </div>
     </nav>
